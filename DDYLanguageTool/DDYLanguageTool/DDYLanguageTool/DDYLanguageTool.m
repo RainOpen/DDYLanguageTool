@@ -35,6 +35,7 @@ static inline void ddy_Swizzle(Class class, SEL originalSelector, SEL swizzledSe
 
 - (NSString *)ddyLanguageLocalizedStringForKey:(NSString *)key value:(NSString *)value table:(NSString *)tableName {
     NSString *language = [[NSUserDefaults standardUserDefaults] objectForKey:DDYLanguages];
+    // 可以加更多条件，比如特定的key,value,tableName才进行交换，否则直接return原方法返回值([language isEqualToString:@"Localizable"])
     if (language && ![self.bundlePath hasSuffix:@".lproj"]) {
         NSBundle *languageBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:language ofType:@"lproj"]];
         if (languageBundle) return [languageBundle ddyLanguageLocalizedStringForKey:key value:value table:tableName];
