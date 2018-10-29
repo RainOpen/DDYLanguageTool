@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A469EB4E2182C4AF00174EAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A469EB442182C4AF00174EAD /* AppDelegate.m */; };
+		A469EB4F2182C4AF00174EAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A469EB452182C4AF00174EAD /* LaunchScreen.storyboard */; };
+		A469EB502182C4AF00174EAD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A469EB472182C4AF00174EAD /* Info.plist */; };
+		A469EB512182C4AF00174EAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A469EB482182C4AF00174EAD /* main.m */; };
+		A469EB522182C4AF00174EAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A469EB4A2182C4AF00174EAD /* ViewController.m */; };
+		A469EB532182C4AF00174EAD /* DDYLanguageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A469EB4D2182C4AF00174EAD /* DDYLanguageTool.m */; };
+		A469EB562182C66800174EAD /* DDYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A469EB552182C66800174EAD /* DDYNavigationController.m */; };
+		A469EB592182C67500174EAD /* DDYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A469EB572182C67500174EAD /* DDYTabBarController.m */; };
+		A469EB5C2182C9D300174EAD /* DDYLanguageSelectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A469EB5B2182C9D300174EAD /* DDYLanguageSelectVC.m */; };
+		A469EB602182CA2B00174EAD /* DDYLanguageExample.strings in Resources */ = {isa = PBXBuildFile; fileRef = A469EB622182CA2B00174EAD /* DDYLanguageExample.strings */; };
+		A469EB6B2182E14600174EAD /* infoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A469EB6D2182E14600174EAD /* infoPlist.strings */; };
+		A469EB712182E4FB00174EAD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A469EB732182E4FB00174EAD /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A469EB2C2182C3ED00174EAD /* DDYLanguageTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDYLanguageTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A469EB432182C4AF00174EAD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A469EB442182C4AF00174EAD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A469EB462182C4AF00174EAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A469EB472182C4AF00174EAD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A469EB482182C4AF00174EAD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A469EB492182C4AF00174EAD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A469EB4A2182C4AF00174EAD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A469EB4C2182C4AF00174EAD /* DDYLanguageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYLanguageTool.h; sourceTree = "<group>"; };
+		A469EB4D2182C4AF00174EAD /* DDYLanguageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDYLanguageTool.m; sourceTree = "<group>"; };
+		A469EB542182C66800174EAD /* DDYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYNavigationController.h; sourceTree = "<group>"; };
+		A469EB552182C66800174EAD /* DDYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDYNavigationController.m; sourceTree = "<group>"; };
+		A469EB572182C67500174EAD /* DDYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDYTabBarController.m; sourceTree = "<group>"; };
+		A469EB582182C67500174EAD /* DDYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYTabBarController.h; sourceTree = "<group>"; };
+		A469EB5A2182C9D300174EAD /* DDYLanguageSelectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDYLanguageSelectVC.h; sourceTree = "<group>"; };
+		A469EB5B2182C9D300174EAD /* DDYLanguageSelectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDYLanguageSelectVC.m; sourceTree = "<group>"; };
+		A469EB5D2182CA0600174EAD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		A469EB612182CA2B00174EAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DDYLanguageExample.strings; sourceTree = "<group>"; };
+		A469EB632182CA2C00174EAD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/DDYLanguageExample.strings"; sourceTree = "<group>"; };
+		A469EB6C2182E14600174EAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/infoPlist.strings; sourceTree = "<group>"; };
+		A469EB6E2182E14800174EAD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/infoPlist.strings"; sourceTree = "<group>"; };
+		A469EB722182E4FB00174EAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A469EB742182E4FC00174EAD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A469EB292182C3ED00174EAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A469EB232182C3ED00174EAD = {
+			isa = PBXGroup;
+			children = (
+				A469EB2E2182C3ED00174EAD /* DDYLanguageTool */,
+				A469EB2D2182C3ED00174EAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A469EB2D2182C3ED00174EAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A469EB2C2182C3ED00174EAD /* DDYLanguageTool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A469EB2E2182C3ED00174EAD /* DDYLanguageTool */ = {
+			isa = PBXGroup;
+			children = (
+				A469EB4B2182C4AF00174EAD /* DDYLanguageTool */,
+				A469EB422182C4AF00174EAD /* DDYLanguageToolExample */,
+			);
+			path = DDYLanguageTool;
+			sourceTree = "<group>";
+		};
+		A469EB422182C4AF00174EAD /* DDYLanguageToolExample */ = {
+			isa = PBXGroup;
+			children = (
+				A469EB432182C4AF00174EAD /* AppDelegate.h */,
+				A469EB442182C4AF00174EAD /* AppDelegate.m */,
+				A469EB452182C4AF00174EAD /* LaunchScreen.storyboard */,
+				A469EB472182C4AF00174EAD /* Info.plist */,
+				A469EB482182C4AF00174EAD /* main.m */,
+				A469EB492182C4AF00174EAD /* ViewController.h */,
+				A469EB4A2182C4AF00174EAD /* ViewController.m */,
+				A469EB5A2182C9D300174EAD /* DDYLanguageSelectVC.h */,
+				A469EB5B2182C9D300174EAD /* DDYLanguageSelectVC.m */,
+				A469EB542182C66800174EAD /* DDYNavigationController.h */,
+				A469EB552182C66800174EAD /* DDYNavigationController.m */,
+				A469EB582182C67500174EAD /* DDYTabBarController.h */,
+				A469EB572182C67500174EAD /* DDYTabBarController.m */,
+				A469EB732182E4FB00174EAD /* Localizable.strings */,
+				A469EB6D2182E14600174EAD /* infoPlist.strings */,
+				A469EB622182CA2B00174EAD /* DDYLanguageExample.strings */,
+			);
+			path = DDYLanguageToolExample;
+			sourceTree = "<group>";
+		};
+		A469EB4B2182C4AF00174EAD /* DDYLanguageTool */ = {
+			isa = PBXGroup;
+			children = (
+				A469EB4C2182C4AF00174EAD /* DDYLanguageTool.h */,
+				A469EB4D2182C4AF00174EAD /* DDYLanguageTool.m */,
+			);
+			path = DDYLanguageTool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A469EB2B2182C3ED00174EAD /* DDYLanguageTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A469EB3F2182C3FB00174EAD /* Build configuration list for PBXNativeTarget "DDYLanguageTool" */;
+			buildPhases = (
+				A469EB282182C3ED00174EAD /* Sources */,
+				A469EB292182C3ED00174EAD /* Frameworks */,
+				A469EB2A2182C3ED00174EAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DDYLanguageTool;
+			productName = DDYLanguageTool;
+			productReference = A469EB2C2182C3ED00174EAD /* DDYLanguageTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A469EB242182C3ED00174EAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = com.smartmesh;
+				TargetAttributes = {
+					A469EB2B2182C3ED00174EAD = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = A469EB272182C3ED00174EAD /* Build configuration list for PBXProject "DDYLanguageTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = A469EB232182C3ED00174EAD;
+			productRefGroup = A469EB2D2182C3ED00174EAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A469EB2B2182C3ED00174EAD /* DDYLanguageTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A469EB2A2182C3ED00174EAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A469EB712182E4FB00174EAD /* Localizable.strings in Resources */,
+				A469EB502182C4AF00174EAD /* Info.plist in Resources */,
+				A469EB6B2182E14600174EAD /* infoPlist.strings in Resources */,
+				A469EB4F2182C4AF00174EAD /* LaunchScreen.storyboard in Resources */,
+				A469EB602182CA2B00174EAD /* DDYLanguageExample.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A469EB282182C3ED00174EAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A469EB522182C4AF00174EAD /* ViewController.m in Sources */,
+				A469EB5C2182C9D300174EAD /* DDYLanguageSelectVC.m in Sources */,
+				A469EB562182C66800174EAD /* DDYNavigationController.m in Sources */,
+				A469EB512182C4AF00174EAD /* main.m in Sources */,
+				A469EB592182C67500174EAD /* DDYTabBarController.m in Sources */,
+				A469EB4E2182C4AF00174EAD /* AppDelegate.m in Sources */,
+				A469EB532182C4AF00174EAD /* DDYLanguageTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A469EB452182C4AF00174EAD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A469EB462182C4AF00174EAD /* Base */,
+				A469EB5D2182CA0600174EAD /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A469EB622182CA2B00174EAD /* DDYLanguageExample.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A469EB612182CA2B00174EAD /* en */,
+				A469EB632182CA2C00174EAD /* zh-Hans */,
+			);
+			name = DDYLanguageExample.strings;
+			sourceTree = "<group>";
+		};
+		A469EB6D2182E14600174EAD /* infoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A469EB6C2182E14600174EAD /* en */,
+				A469EB6E2182E14800174EAD /* zh-Hans */,
+			);
+			name = infoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A469EB732182E4FB00174EAD /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A469EB722182E4FB00174EAD /* en */,
+				A469EB742182E4FC00174EAD /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A469EB3D2182C3FB00174EAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A469EB3E2182C3FB00174EAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A469EB402182C3FB00174EAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23JJ7VRKJT;
+				INFOPLIST_FILE = "$(SRCROOT)/DDYLanguageTool/DDYLanguageToolExample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartmesh.smart2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A469EB412182C3FB00174EAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 23JJ7VRKJT;
+				INFOPLIST_FILE = "$(SRCROOT)/DDYLanguageTool/DDYLanguageToolExample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartmesh.smart2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A469EB272182C3ED00174EAD /* Build configuration list for PBXProject "DDYLanguageTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A469EB3D2182C3FB00174EAD /* Debug */,
+				A469EB3E2182C3FB00174EAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A469EB3F2182C3FB00174EAD /* Build configuration list for PBXNativeTarget "DDYLanguageTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A469EB402182C3FB00174EAD /* Debug */,
+				A469EB412182C3FB00174EAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A469EB242182C3ED00174EAD /* Project object */;
+}
