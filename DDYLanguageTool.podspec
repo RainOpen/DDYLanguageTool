@@ -1,6 +1,6 @@
 Pod::Spec.new do |ddyspec|
     ddyspec.name         = 'DDYLanguageTool'
-    ddyspec.version      = '1.0.1'
+    ddyspec.version      = '1.0.2'
     ddyspec.summary      = '多语言国际化工具(应用内国际化/跟随系统)'
     ddyspec.homepage     = 'https://github.com/RainOpen/DDYLanguageTool'
     ddyspec.license      = 'MIT'
