@@ -70,14 +70,13 @@ static inline void ddy_Swizzle(Class class, SEL originalSelector, SEL swizzledSe
 
 // MARK: App应用语言
 + (NSString *)ddy_AppLanguage {
-    NSString *AppLanguage = [[NSUserDefaults standardUserDefaults] objectForKey:DDYLanguages];
-    return AppLanguage ? AppLanguage : [self ddy_SystemLanguage];
+    return [[NSUserDefaults standardUserDefaults] objectForKey:DDYLanguages];
 }
 
 // MARK: 设置语言 nil:跟随系统 language:相应语言
 + (void)ddy_SetLanguage:(NSString *)language complete:(void (^)(NSError *))complete {
     NSError *languageError;
-    if (language == nil) {
+    if (language == nil || [language isEqualToString:@""]) {
         [[NSUserDefaults standardUserDefaults] removeObjectForKey:DDYLanguages];
         languageError = [NSError errorWithDomain:DDYLanguageErrorDomain code:kDDYLanguageErrorNil userInfo:@{@"reason":@"Remove language setting"}];
     } else {

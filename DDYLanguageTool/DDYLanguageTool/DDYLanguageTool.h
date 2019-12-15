@@ -36,7 +36,7 @@ extern NSErrorDomain DDYLanguageErrorDomain;
 
 /// 手机系统语言
 + (NSString *)ddy_SystemLanguage;
-/// App应用语言 如果未设置将返回手机系统语言
+/// App应用语言(应用内设置的语言，nil或@""代表只跟随系统)
 + (NSString *)ddy_AppLanguage;
 /// 设置语言 （nil则跟随系统，其他具体语言则查找 language.lproj 配置）
 + (void)ddy_SetLanguage:(NSString *)language complete:(void (^)(NSError *error))complete;

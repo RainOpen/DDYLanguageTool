@@ -17,7 +17,8 @@
 - (NSMutableArray *)dataArray {
     if (!_dataArray) {
         _dataArray = [NSMutableArray arrayWithArray:@[@{@"title":@"简体中文", @"tag":@"zh-Hans"},
-                                                      @{@"title":@"English", @"tag":@"en"}]];
+                                                      @{@"title":@"English", @"tag":@"en"},
+                                                      @{@"title":@"DDYSystemLanguage", @"tag":@""}]];
     }
     return _dataArray;
 }
@@ -47,9 +48,9 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ddyCellID"];
     }
-    cell.textLabel.text = self.dataArray[indexPath.row][@"title"];
+    cell.textLabel.text = NSLocalizedStringFromTable(self.dataArray[indexPath.row][@"title"], @"DDYLanguageExample", nil) ;
     NSString *tempTag = self.dataArray[indexPath.row][@"tag"];
-    cell.accessoryType = [tempTag isEqualToString:[DDYLanguageTool ddy_AppLanguage]] ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
+    cell.accessoryType = [tempTag isEqualToString:([DDYLanguageTool ddy_AppLanguage]?:@"")] ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
     return cell;
 }
 

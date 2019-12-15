@@ -6,3 +6,5 @@
 "DDYTest1" = "测试1";
 "DDYTest2" = "测试2";
 "DDYSelectLanguage" = "语言选择";
+
+"DDYSystemLanguage" = "跟随系统";
