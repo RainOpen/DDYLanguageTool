@@ -1,3 +1,10 @@
+/// MARK: - DDYAuthManager 2018/10/30
+/// !!!: Author: 豆电雨
+/// !!!: QQ/WX:  634778311
+/// !!!: Github: https://github.com/RainOpen/
+/// !!!: Blog:   https://juejin.im/user/57dddcd8128fe10064cadee9
+/// MARK: - App语言切换工具
+
 #import <Foundation/Foundation.h>
 
 #define DDYLocalStr(key)  [NSBundle.mainBundle localizedStringForKey:(key) value:@"" table:nil]
@@ -27,11 +34,11 @@ extern NSErrorDomain DDYLanguageErrorDomain;
 
 @interface DDYLanguageTool : NSObject
 
-/** 手机系统语言 */
+/// 手机系统语言
 + (NSString *)ddy_SystemLanguage;
-/** App应用语言 如果未设置将返回手机系统语言 */
+/// App应用语言 如果未设置将返回手机系统语言
 + (NSString *)ddy_AppLanguage;
-/** 设置语言  */
+/// 设置语言 （nil则跟随系统，其他具体语言则查找 language.lproj 配置）
 + (void)ddy_SetLanguage:(NSString *)language complete:(void (^)(NSError *error))complete;
 
 @end

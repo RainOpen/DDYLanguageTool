@@ -1,3 +1,10 @@
+/// MARK: - DDYAuthManager 2018/10/30
+/// !!!: Author: 豆电雨
+/// !!!: QQ/WX:  634778311
+/// !!!: Github: https://github.com/RainOpen/
+/// !!!: Blog:   https://juejin.im/user/57dddcd8128fe10064cadee9
+/// MARK: - DDYLanguageTool.M
+
 #import "DDYLanguageTool.h"
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
@@ -30,6 +37,7 @@ static inline void ddy_Swizzle(Class class, SEL originalSelector, SEL swizzledSe
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         ddy_Swizzle([self class], @selector(localizedStringForKey:value:table:), @selector(ddyLanguageLocalizedStringForKey:value:table:));
+        ddy_Swizzle([self class], NSSelectorFromString(@"dealloc"), @selector(ddyLanguageDealloc));
     });
 }
 
@@ -38,45 +46,48 @@ static inline void ddy_Swizzle(Class class, SEL originalSelector, SEL swizzledSe
     // 可以加更多条件，比如特定的key,value,tableName才进行交换，否则直接return原方法返回值([language isEqualToString:@"Localizable"])
     if (language && ![self.bundlePath hasSuffix:@".lproj"]) {
         NSBundle *languageBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:language ofType:@"lproj"]];
-        if (languageBundle) return [languageBundle ddyLanguageLocalizedStringForKey:key value:value table:tableName];
+        if (languageBundle) {
+            return [languageBundle ddyLanguageLocalizedStringForKey:key value:value table:tableName];
+        }
     }
     return [self ddyLanguageLocalizedStringForKey:key value:value table:tableName];
 }
 
-- (void)dealloc {
+- (void)ddyLanguageDealloc {
     objc_removeAssociatedObjects(self);
+    [self ddyLanguageDealloc];
 }
 
 @end
 
 @implementation DDYLanguageTool
 
-#pragma mark - 类方法
-#pragma mark 手机系统语言
+// MARK: - 类方法
+// MARK: 手机系统语言
 + (NSString *)ddy_SystemLanguage {
     return [[NSLocale preferredLanguages] objectAtIndex:0];
 }
 
-#pragma mark App应用语言
+// MARK: App应用语言
 + (NSString *)ddy_AppLanguage {
     NSString *AppLanguage = [[NSUserDefaults standardUserDefaults] objectForKey:DDYLanguages];
     return AppLanguage ? AppLanguage : [self ddy_SystemLanguage];
 }
 
-#pragma mark 设置语言 nil:跟随系统 language:相应语言
+// MARK: 设置语言 nil:跟随系统 language:相应语言
 + (void)ddy_SetLanguage:(NSString *)language complete:(void (^)(NSError *))complete {
     NSError *languageError;
-    NSBundle *languageBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:language ofType:@"lproj"]];
-    if (languageBundle) {
-        if (language) {
-            [[NSUserDefaults standardUserDefaults] setObject:language forKey:DDYLanguages];
-            languageError = [NSError errorWithDomain:DDYLanguageErrorDomain code:kDDYLanguageErrorUnsupport userInfo:@{@"reason":@"Success"}];
-        } else {
-            [[NSUserDefaults standardUserDefaults] removeObjectForKey:DDYLanguages];
-            languageError = [NSError errorWithDomain:DDYLanguageErrorDomain code:kDDYLanguageErrorNil userInfo:@{@"reason":@"Remove language setting"}];
-        }
+    if (language == nil) {
+        [[NSUserDefaults standardUserDefaults] removeObjectForKey:DDYLanguages];
+        languageError = [NSError errorWithDomain:DDYLanguageErrorDomain code:kDDYLanguageErrorNil userInfo:@{@"reason":@"Remove language setting"}];
     } else {
-        languageError = [NSError errorWithDomain:DDYLanguageErrorDomain code:kDDYLanguageErrorUnsupport userInfo:@{@"reason":@"Unsupported language"}];
+        NSBundle *languageBundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:language ofType:@"lproj"]];
+        if (languageBundle) {
+            [[NSUserDefaults standardUserDefaults] setObject:language forKey:DDYLanguages];
+            languageError = [NSError errorWithDomain:DDYLanguageErrorDomain code:kDDYLanguageErrorSuccess userInfo:@{@"reason":@"Success"}];
+        } else {
+            languageError = [NSError errorWithDomain:DDYLanguageErrorDomain code:kDDYLanguageErrorUnsupport userInfo:@{@"reason":@"Unsupported language"}];
+        }
     }
     [[NSUserDefaults standardUserDefaults] synchronize];
     if (complete) {

@@ -15,7 +15,7 @@
 		A469EC5C21880F6700174EAD /* DDYLanguageSelectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A469EC5321880F6600174EAD /* DDYLanguageSelectVC.m */; };
 		A469EC5D21880F6700174EAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A469EC5621880F6600174EAD /* AppDelegate.m */; };
 		A469EC5E21880F6700174EAD /* DDYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A469EC5721880F6600174EAD /* DDYTabBarController.m */; };
-		A469EC5F21880F6700174EAD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A469EC5821880F6600174EAD /* Info.plist */; };
+		A469EC5F21880F6700174EAD /* DDYLanguageInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = A469EC5821880F6600174EAD /* DDYLanguageInfo.plist */; };
 		A469EC6021880F6700174EAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A469EC5921880F6600174EAD /* main.m */; };
 		A469EC6121880F6700174EAD /* DDYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A469EC5A21880F6600174EAD /* DDYNavigationController.m */; };
 /* End PBXBuildFile section */
@@ -39,7 +39,7 @@
 		A469EC5521880F6600174EAD /* DDYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDYNavigationController.h; sourceTree = "<group>"; };
 		A469EC5621880F6600174EAD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A469EC5721880F6600174EAD /* DDYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDYTabBarController.m; sourceTree = "<group>"; };
-		A469EC5821880F6600174EAD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A469EC5821880F6600174EAD /* DDYLanguageInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DDYLanguageInfo.plist; sourceTree = "<group>"; };
 		A469EC5921880F6600174EAD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A469EC5A21880F6600174EAD /* DDYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDYNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,7 +92,7 @@
 				A469EC5A21880F6600174EAD /* DDYNavigationController.m */,
 				A469EC5121880F6600174EAD /* DDYTabBarController.h */,
 				A469EC5721880F6600174EAD /* DDYTabBarController.m */,
-				A469EC5821880F6600174EAD /* Info.plist */,
+				A469EC5821880F6600174EAD /* DDYLanguageInfo.plist */,
 				A469EC5921880F6600174EAD /* main.m */,
 				A469EC5021880F6600174EAD /* ViewController.h */,
 				A469EC4F21880F6600174EAD /* ViewController.m */,
@@ -161,7 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A469EC5F21880F6700174EAD /* Info.plist in Resources */,
+				A469EC5F21880F6700174EAD /* DDYLanguageInfo.plist in Resources */,
 				A469EB712182E4FB00174EAD /* Localizable.strings in Resources */,
 				A469EB6B2182E14600174EAD /* infoPlist.strings in Resources */,
 				A469EB602182CA2B00174EAD /* DDYLanguageExample.strings in Resources */,
@@ -335,7 +335,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23JJ7VRKJT;
-				INFOPLIST_FILE = "$(SRCROOT)/DDYLanguageToolExample/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DDYLanguageToolExample/DDYLanguageInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -352,7 +352,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 23JJ7VRKJT;
-				INFOPLIST_FILE = "$(SRCROOT)/DDYLanguageToolExample/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/DDYLanguageToolExample/DDYLanguageInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
